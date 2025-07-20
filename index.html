@@ -3,64 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gohil Mayur - Portfolio</title>
+    <title>Gohil Mayur | Online Portfolio</title>
+    
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    
+    <div id="tsparticles"></div>
 
-    <header>
-        <h1>Gohil Mayur</h1>
-        <p>Creative Web Developer</p>
+    <header class="main-header">
+        <div class="container">
+            <a href="#home" class="logo">ONLINE PORTFOLIO</a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle">☰</button>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>I'm a B.Tech IT Student</h2>
-            <img src="myphoto.jpg" alt="A picture of Gohil Mayur" width="200">
-            <p>
-                I am a student passionate about technology and design. I enjoy building web applications that are easy to use and solve real-world problems. I am currently focused on improving my JavaScript and React skills.
-            </p>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>GOHIL MAYUR</h1>
+                <p>💻 I’m a B.Tech IT student and a beginner in web development. I’m learning HTML, CSS, JavaScript, and excited to build real-world projects and grow in the tech field.</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Power BI</li>
-            </ul>
+        <section id="about" class="section section-gradient-1">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <img src="images/mayur-photo.jpg" alt="Gohil Mayur, a web developer">
+                    <div>
+                        <h3>Passionate Developer & Lifelong Learner</h3>
+                        <p>
+                            As a dedicated Information Technology student, I am deeply passionate about turning complex problems into beautiful, intuitive digital solutions. My journey in web development started with a curiosity for how things work on the internet, and it has grown into a full-fledged dedication to mastering the craft.
+                        </p>
+                        <p>
+                            I thrive on challenges and am constantly expanding my skillset. My goal is to work with a team that values creativity and innovation, where I can contribute to meaningful projects and continue my growth as a developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="section section-gradient-5">
+             <div class="container">
+                <h2 class="section-title">Services I Offer</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-code icon"></i>
+                        <h3>Frontend Development</h3>
+                        <p>Creating responsive and visually appealing websites using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-mobile-alt icon"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring your website looks and functions perfectly on all devices, from desktops to mobile phones.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-lightbulb icon"></i>
+                        <h3>UI/UX Concepts</h3>
+                        <p>Applying user-centric design principles to build intuitive and easy-to-use interfaces.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project">
-                <img src="myprojectss.jpg" alt="Screenshot of Project One">
-                <h3>Portfolio</h3>
-                <p>
-                    I'm Mayur, a passionate and dedicated student with a strong focus on front-end and back-end development. This portfolio showcases my projects, skills, and experiences that reflect my journey, creativity, and continuous learning. I believe in clean, functional, and user-centered design/development, and I’m always open to new challenges and collaborations.
-                </p>
-            </div> </section>
-
-        <section id="resume">
-            <h2>My Resume</h2>
-            <p>
-                You can download my resume to learn more about my experience.
-                <a href="Myresume.pdf" download>Download Resume (PDF)</a>
-            </p>
+        <section id="skills" class="section section-gradient-3">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <h3>HTML5</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%;">90%</div></div>
+                    </div>
+                    <div class="skill">
+                        <h3>CSS3</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
+                    </div>
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 70%;">70%</div></div>
+                    </div>
+                     <div class="skill">
+                        <h3>React (Learning)</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 50%;">50%</div></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:gohil7256@gmail.com">gohil7256@gmail.com</a></p>
-            <p>Phone: +91 8238325064</p>
+        <section id="contact" class="section section-gradient-4">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Gohil Mayur. All Rights Reserved.</p>
-    </footer>
+    <footer class="amazon-footer">
+    <a href="#home" class="back-to-top">
+        Back to top
+    </a>
 
+    <div class="container">
+        <div class="footer-grid-amazon">
+            
+            <div class="footer-col-amazon">
+                <h4>Get to Know Me</h4>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-amazon">
+                <h4>My Work</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio Details</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-amazon">
+                <h4>Connect With Me</h4>
+                <div class="social-links-amazon">
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+            
+            <div class="footer-col-amazon">
+                <h4>Let Me Help You</h4>
+                <ul>
+                    <li><a href="#contact">Hire Me</a></li>
+                    <li><span>gohil.mayur@email.com</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="footer-bottom-amazon">
+        <div class="container">
+            <a href="#home" class="footer-logo">GOHIL MAYUR | PORTFOLIO</a>
+            <p>&copy; 2025 Gohil Mayur. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        // --- Close Menu on Link Click ---
+        const navLinks = document.querySelectorAll('.main-nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            background: {
+                color: "#0d2438"
+            },
+            fpsLimit: 60,
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    resize: true
+                },
+                modes: {
+                    repulse: {
+                        distance: 100,
+                        duration: 0.4
+                    }
+                }
+            },
+            particles: {
+                color: {
+                    value: "#ffffff"
+                },
+                links: {
+                    color: "#ffffff",
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.2,
+                    width: 1
+                },
+                collisions: {
+                    enable: true
+                },
+                move: {
+                    direction: "none",
+                    enable: true,
+                    outModes: "out",
+                    random: false,
+                    speed: 1.5,
+                    straight: false
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 80
+                },
+                opacity: {
+                    value: 0.2
+                },
+                shape: {
+                    type: "circle"
+                },
+                size: {
+                    value: { min: 1, max: 5 }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
